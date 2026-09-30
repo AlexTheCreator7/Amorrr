@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Para ti, Angie ♡</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <canvas id="bg"></canvas>
+  <canvas id="fx"></canvas>
+
+  <div class="orn orn-tl"><svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 90 Q10 10 90 10" stroke="currentColor" stroke-width="1" fill="none"/><path d="M10 90 Q20 50 50 40" stroke="currentColor" stroke-width=".8" fill="none"/><path d="M10 90 Q50 80 60 50" stroke="currentColor" stroke-width=".8" fill="none"/><circle cx="50" cy="40" r="3" fill="currentColor" opacity=".3"/><circle cx="60" cy="50" r="2.5" fill="currentColor" opacity=".25"/><circle cx="90" cy="10" r="3" fill="currentColor" opacity=".3"/></svg></div>
+  <div class="orn orn-tr"><svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 90 Q10 10 90 10" stroke="currentColor" stroke-width="1" fill="none"/><path d="M10 90 Q20 50 50 40" stroke="currentColor" stroke-width=".8" fill="none"/><path d="M10 90 Q50 80 60 50" stroke="currentColor" stroke-width=".8" fill="none"/><circle cx="50" cy="40" r="3" fill="currentColor" opacity=".3"/><circle cx="60" cy="50" r="2.5" fill="currentColor" opacity=".25"/></svg></div>
+  <div class="orn orn-bl"><svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 90 Q10 10 90 10" stroke="currentColor" stroke-width="1" fill="none"/><path d="M10 90 Q20 50 50 40" stroke="currentColor" stroke-width=".8" fill="none"/><path d="M10 90 Q50 80 60 50" stroke="currentColor" stroke-width=".8" fill="none"/><circle cx="50" cy="40" r="3" fill="currentColor" opacity=".3"/><circle cx="60" cy="50" r="2.5" fill="currentColor" opacity=".25"/></svg></div>
+  <div class="orn orn-br"><svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 90 Q10 10 90 10" stroke="currentColor" stroke-width="1" fill="none"/><path d="M10 90 Q20 50 50 40" stroke="currentColor" stroke-width=".8" fill="none"/><path d="M10 90 Q50 80 60 50" stroke="currentColor" stroke-width=".8" fill="none"/><circle cx="50" cy="40" r="3" fill="currentColor" opacity=".3"/><circle cx="60" cy="50" r="2.5" fill="currentColor" opacity=".25"/></svg></div>
+
+  <!-- PROMPT -->
+  <div id="prompt">
+    <svg class="icon" viewBox="0 0 80 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M40 68C40 68 4 44 4 22C4 10 14 2 24 2C32 2 38 8 40 14C42 8 48 2 56 2C66 2 76 10 76 22C76 44 40 68 40 68Z" stroke="#7a2e3a" stroke-width="1.8" fill="none" stroke-dasharray="4 3" opacity=".5"/>
+      <path d="M40 60C40 60 12 40 12 24C12 14 19 8 27 8C33 8 38 13 40 18C42 13 47 8 53 8C61 8 68 14 68 24C68 40 40 60 40 60Z" fill="#7a2e3a" opacity=".1"/>
+    </svg>
+    <span class="label">toca para abrir</span>
+  </div>
+
+  <!-- PHOTO -->
+  <div id="photoWrap">
+    <div class="frame-outer">
+      <div class="glow"></div>
+      <div class="odot odot-1"></div>
+      <div class="odot odot-2"></div>
+      <div class="frame-inner">
+        <img src="img/angie.png" alt="Angie">
+      </div>
+    </div>
+  </div>
+
+  <!-- MESSAGE -->
+  <div id="msg">
+    <!-- Te amooo — o's grow -->
+    <h1 id="line1">Te am<span class="g" style="--i:0">o</span><span class="g" style="--i:1">o</span><span class="g" style="--i:2">o</span></h1>
+
+    <!-- mi amooooooooor — o's grow even more, R is the biggest -->
+    <div id="line2">mi am<span class="g2" style="--j:0">o</span><span class="g2" style="--j:1">o</span><span class="g2" style="--j:2">o</span><span class="g2" style="--j:3">o</span><span class="g2" style="--j:4">o</span><span class="g2" style="--j:5">o</span><span class="g2" style="--j:6">o</span><span class="g2" style="--j:7">o</span><span class="g2" style="--j:8">o</span><span class="g2 final-r" style="--j:9">r</span></div>
+
+    <span class="sep" id="sep"></span>
+    <p id="sub">mi persona favorita ♡</p>
+  </div>
+
+  <div id="restart">toca de nuevo para repetir</div>
+
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
